@@ -7,7 +7,7 @@ mongoose
   .then(() => console.log("successfully connected to database..."))
   .catch((error) => {
     console.log({
-      message: "can't connect to database💥💥💥.",
+      message: "can't connect to database💥💥💥💥💥💥.",
       error,
     });
   });

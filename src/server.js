@@ -1,5 +1,7 @@
 require("dotenv").config({ path: ".env" });
 require("./db/mongodb");
-const app = require('./app');
+const app = require("./app");
 
-app.listen(process.env.PORT || 3000, () => console.log("Server Started"));
+app.listen(process.env.PORT || 3000, () =>
+  console.log(`Server Started ${process.env.PORT || 3000}`)
+);
