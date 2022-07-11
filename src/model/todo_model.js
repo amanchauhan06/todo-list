@@ -23,6 +23,10 @@ const schema = mongoose.Schema({
         throw new Error("Description should be greater than 20");
     },
   },
+  completed: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const taskSchema = mongoose.Schema(schema, schemaOptions);

@@ -29,7 +29,7 @@ const deleteOneTodo = async (req, res) => {
 const updateOneTodo = async (req, res) => {
   try {
     const updates = Object.keys(req.body);
-    const allowedUpdates = ["title", "description"];
+    const allowedUpdates = ["title", "description", "completed"];
 
     const isValidUpdate = updates.every((e) => allowedUpdates.includes(e));
     if (!isValidUpdate) {
